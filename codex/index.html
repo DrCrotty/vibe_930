@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turtle Turbo: Taco Boss Rush</title>
+    <style>
+      :root {
+        --bg-top: #8ab3ff;
+        --bg-bottom: #ffd7be;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(97vw, 1160px);
+      }
+
+      #p5-container {
+        width: 100%;
+        border: 3px solid rgba(30, 34, 58, 0.35);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 16px 40px rgba(22, 30, 52, 0.22);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="p5-container"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
